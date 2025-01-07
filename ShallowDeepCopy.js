@@ -60,4 +60,3 @@ function deepCopy(newObj,oldObj){
 
 
 
-    //T2. 类型判断
