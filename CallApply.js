@@ -1,5 +1,6 @@
-// 手写实现call和apply
-
+// T6 手写实现call和apply
+// call和apply都是用来改变函数的this指向的，区别在于传参的方式不同。
+// call是将参数按顺序传入，apply是将参数放在数组中传入。
 // 给context加一个属性，属性值是当前函数，然后调用这个属性，最后删除这个属性
 Function.prototype.myCall = function (context, ...args) {
     // 如果context是null或者undefined，那么context指向全局对象

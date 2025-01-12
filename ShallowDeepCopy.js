@@ -41,6 +41,8 @@ print(obj2);
 
 
 //深拷贝
+//在浅拷贝的基础上，要判断key是否为对象
+//判断方式: instanceof Array, instanceof Object
 function deepCopy(newObj,oldObj){
     for (let key in oldObj){
         let item = oldObj[key]

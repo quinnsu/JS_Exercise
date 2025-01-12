@@ -1,4 +1,5 @@
-// 手写instanceof
+// T5 手写instanceof
+// left是实例对象，right是构造函数
 function myInstanceof(left, right) {
   let proto = left.__proto__; // 取左表达式的__proto__值(指向它的原型)
   let prototype = right.prototype; //构造函数会有一个prototype属性，用这个构造函数创建的实例的__proto__属性会指向这个prototype
